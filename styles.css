@@ -1,0 +1,176 @@
+body {
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.phoenix {
+    position: relative;
+    width: 200px;
+    height: 400px;
+}
+
+.head {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    background-color: #ff4500;
+    border-radius: 50%;
+}
+
+.beak {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 10px;
+    background-color: #ffd700;
+    border-radius: 50% 50% 0 0;
+}
+
+.eyes {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 40px;
+}
+
+.eye {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+}
+
+.eye::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 6px;
+    height: 6px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.crest {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 20px;
+    background-color: #ff4500;
+    border-radius: 50%;
+    clip-path: polygon(0 100%, 50% 0, 100% 100%);
+}
+
+.body {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 200px;
+    background-color: #ff4500;
+    border-radius: 50% 50% 30% 30%;
+}
+
+.feathers {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+}
+
+.feather {
+    width: 20px;
+    height: 60px;
+    background-color: #ff6347;
+    border-radius: 50%;
+    position: relative;
+}
+
+.feather::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 40px;
+    background-color: #ff4500;
+    border-radius: 50%;
+}
+
+.wings {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.wing-left, .wing-right {
+    width: 100px;
+    height: 150px;
+    background-color: #ff4500;
+    border-radius: 50% 50% 0 0;
+    position: relative;
+}
+
+.wing-left::before, .wing-right::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 80px;
+    height: 130px;
+    background-color: #ff6347;
+    border-radius: 50% 50% 0 0;
+}
+
+.wing-left {
+    transform: rotate(-20deg);
+}
+
+.wing-right {
+    transform: rotate(20deg);
+}
+
+.tail {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+}
+
+.tail-feather {
+    width: 30px;
+    height: 100px;
+    background-color: #ff6347;
+    border-radius: 50%;
+    position: relative;
+}
+
+.tail-feather::before {
+    cont
